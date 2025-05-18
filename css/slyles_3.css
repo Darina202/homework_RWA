@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #1e272f;
   background: #f7f2e6;
   margin: 0;
@@ -51,7 +51,7 @@ footer {
 }
 
 .header-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 36px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -107,6 +107,10 @@ footer {
   margin-top: 20px;
   display: flex;
   gap: 30px;
+}
+
+.main-new-article:nth-child(2) {
+  flex-direction: row-reverse;
 }
 
 .main-new-title {
@@ -176,9 +180,13 @@ footer {
   padding: 12px 20px;
 }
 
+.search-svg {
+  width: 20px;
+  height: 20px;
+}
+
 .popular-title {
   font-size: 18px;
-  font-weight: 500;
   margin-bottom: 20px;
   padding-left: 40px;
   line-height: 1.5;
@@ -235,11 +243,16 @@ footer {
   padding: 32px;
 }
 
-/*-------------------------------MOBILE---------------------------*/
-
-@media screen and (max-width: 428px) {
+/*-----------------------------LAPTOP 1024px-------------------------*/
+@media screen and (max-width: 1024px) {
   .container {
-    max-width: 426px;
+    max-width: 1000px;
+  }
+  .all-page {
+    gap: 40px;
+  }
+  .main-new-picture {
+    width: 250px;
   }
 }
 
@@ -248,5 +261,171 @@ footer {
 @media screen and (max-width: 768px) {
   .container {
     max-width: 766px;
+  }
+
+  .main-container {
+    max-width: 450px;
+  }
+  .all-page {
+    gap: 28px;
+  }
+  .main-picture {
+    width: 450px;
+  }
+
+  .main-new-article {
+    gap: 24px;
+  }
+
+  .main-new-picture {
+    width: 200px;
+  }
+  .main-new-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .main-story-text {
+    font-size: 14px;
+  }
+
+  .aside-container {
+    max-width: 250px;
+  }
+
+  .search-input {
+    width: 100px;
+    height: 36px;
+  }
+  .search-btn {
+    padding: 8px 12px;
+  }
+  .search-svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .search-field {
+    padding-bottom: 16px;
+    margin: 0px 32px 16px;
+  }
+
+  .popular-title {
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding-left: 28px;
+  }
+
+  .second-popular-list {
+    padding-left: 44px;
+  }
+
+  .second-popular-item {
+    font-size: 14px;
+  }
+
+  .footer-container {
+    font-size: 14px;
+    padding: 24px;
+  }
+}
+
+/*-------------------------------MOBILE---------------------------*/
+
+@media screen and (max-width: 428px) {
+  .container {
+    max-width: 426px;
+  }
+
+  .header {
+    margin-bottom: 32px;
+  }
+
+  .header-title {
+    font-size: 32px;
+    padding: 24px;
+  }
+
+  .menu {
+    gap: 32px;
+    padding: 12px;
+  }
+
+  .header-text {
+    font-size: 14px;
+  }
+
+  .main-container {
+    max-width: 200px;
+  }
+
+  .main-picture {
+    width: 200px;
+  }
+
+  .main-new-picture {
+    width: 200px;
+  }
+
+  .main-new-article {
+    padding-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .main-new-article:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .aside-container {
+    max-width: 170px;
+  }
+  .search-field {
+    padding-bottom: 12px;
+    margin: 0px 20px 12px;
+  }
+  .search-input {
+    width: 80px;
+    height: 26px;
+  }
+  .search-btn {
+    padding: 5px 8px;
+  }
+  .search-svg {
+    width: 8px;
+    height: 8px;
+  }
+
+  .popular-title {
+    font-size: 14px;
+    margin-bottom: 12px;
+    padding-left: 18px;
+  }
+
+  .second-popular-list {
+    padding-left: 28px;
+  }
+
+  .second-popular-item {
+    font-size: 10px;
+  }
+
+  .btn {
+    font-size: 14px;
+    min-width: 120px;
+    padding: 12px 24px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .container {
+    max-width: 320px;
+  }
+  .all-page {
+    gap: 24px;
+  }
+  .aside-container {
+    max-width: 140px;
   }
 }
