@@ -38,3 +38,10 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+a {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+}
