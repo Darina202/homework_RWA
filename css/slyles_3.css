@@ -1,0 +1,252 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #1e272f;
+  background: #f7f2e6;
+  margin: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+aside,
+footer {
+  font-size: 14px;
+}
+
+/*------------HEADER-----------*/
+
+.header {
+  margin-bottom: 50px;
+}
+
+.header-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  background-color: #27567d;
+  padding: 40px;
+  color: #f5f1df;
+}
+
+.menu {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  background-color: #21496a;
+  padding: 16px;
+}
+
+.header-text {
+  color: #f5f1df;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-text:hover,
+.header-text:focus {
+  color: #fddf99;
+}
+
+/*------------MAIN-----------*/
+
+.all-page {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+.main-container {
+  max-width: 700px;
+}
+
+.main-story-title {
+  font-size: 24px;
+  margin: 16px 0px;
+}
+.main-story-text {
+  font-size: 18px;
+}
+
+.main-new-article {
+  border-top: 2px solid #85b3bb;
+  padding-top: 20px;
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.main-new-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.main-picture {
+  border-radius: 10px;
+  width: 700px;
+}
+
+.main-new-picture {
+  border-radius: 10px;
+  width: 400px;
+}
+
+.side-news {
+  border-bottom: 2px solid #85b3bb;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.aside-container {
+  max-width: 400px;
+}
+
+.first-popular-news {
+  background-color: #c6dae1;
+  padding: 20px 0px;
+  border-radius: 10px;
+}
+
+.search-field {
+  border-bottom: 2px solid #85b3bb;
+  padding-bottom: 20px;
+  margin: 0px 40px 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.search-input {
+  width: 200px;
+  height: 48px;
+  color: #1e272f;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: #f8f2e6;
+  border-radius: 4px;
+  border: 1px solid #2d5e84;
+  opacity: 0.9;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  flex: 1;
+  padding: 12px 16px;
+}
+
+.search-btn {
+  fill: #f5f1df;
+  stroke: #f5f1df;
+  border: none;
+  background-color: #2d5e84;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 12px 20px;
+}
+
+.popular-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+
+.second-popular-news {
+  background-color: #c6dae1;
+  padding: 20px 0px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+.second-popular-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  gap: 12px;
+}
+.second-popular-item {
+  list-style-type: disc;
+  font-size: 16px;
+}
+
+.btn {
+  color: #f5f1df;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  border: none;
+  letter-spacing: 0.04em;
+  background-color: #2d5e84;
+  cursor: pointer;
+  min-width: 169px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 14px 40px;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #67adbf;
+}
+
+.footer-container {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: #c3d6e0;
+  padding: 32px;
+}
+
+/*-------------------------------MOBILE---------------------------*/
+
+@media screen and (max-width: 428px) {
+  .container {
+    max-width: 426px;
+  }
+}
+
+/*-------------------------------TABLET---------------------------*/
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+}
