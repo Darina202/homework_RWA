@@ -38,11 +38,15 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
-
+div {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+}
 a {
   font-size: 36px;
-  display: flex;
-  justify-content: center;
-  padding-top: 200px;
+
   text-align: center;
 }
