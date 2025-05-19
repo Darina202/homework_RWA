@@ -3,11 +3,173 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Робота з фреймворками для верстання</title>
+    <title>Responsive News Site</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles_5.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <h1>NEWS WEBSITE</h1>
+      <nav class="text-center">
+        <a href="#">Home</a>
+        <a href="#">World</a>
+        <a href="#">Politics</a>
+        <a href="#">Business</a>
+      </nav>
+    </header>
+
+    <div class="container py-4">
+      <div class="row g-4">
+        <main class="col-lg-8 col-md-8 mb-4">
+          <article class="mb-4 border-bottom pb-3 mb-3">
+            <img
+              src="./img/main-story.png"
+              alt="urban landscape"
+              class="img-fluid rounded"
+            />
+            <h2 class="main-story-title">Main Story Title</h2>
+            <p class="main-story-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              distinctio nobis asperiores. Libero voluptate accusantium
+              repellendus eveniet delectus tempore repellat numquam qui atque
+              laboriosam. Laborum ratione quasi sunt eius commodi.
+            </p>
+          </article>
+
+          <div class="row g-4">
+            <article
+              class="col-md-12 d-flex flex-column flex-md-row align-items-start border-bottom pb-3"
+            >
+              <img
+                src="./img/world.png"
+                class="img-fluid rounded me-md-3 mb-3 mb-md-0 main-new-picture"
+                alt="World"
+                style="max-width: 250px"
+              />
+              <div>
+                <h3 class="main-new-title">World</h3>
+                <p class="main-story-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus neque, saepe perferendis esse nam aperiam illum
+                  labore...
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="col-md-12 d-flex flex-column flex-md-row-reverse align-items-start border-bottom pb-3"
+            >
+              <img
+                src="./img/politics.jpg"
+                class="img-fluid rounded ms-md-3 mb-3 mb-md-0 main-new-picture"
+                alt="Politics"
+                style="max-width: 250px"
+              />
+              <div>
+                <h3 class="main-new-title">Politics</h3>
+                <p class="main-story-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores dicta sed voluptate praesentium ducimus natus vitae
+                  commodi quia nam odit qui magnam laudantium voluptas nulla
+                  hic, illo totam quasi at!
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="col-md-12 d-flex flex-column flex-md-row align-items-start"
+            >
+              <img
+                src="./img/business.jpg"
+                class="img-fluid rounded me-md-3 mb-3 mb-md-0 main-new-picture"
+                alt="Business"
+                style="max-width: 250px"
+              />
+              <div>
+                <h3 class="main-new-title">Business</h3>
+                <p class="main-story-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                  nesciunt commodi laboriosam excepturi dolor impedit
+                  dignissimos...
+                </p>
+              </div>
+            </article>
+          </div>
+        </main>
+
+        <aside class="col-lg-4 col-md-4">
+          <section class="bg-info-subtle p-3 rounded mb-4">
+            <div class="input-group mb-3">
+              <input type="search" class="form-control" placeholder="Search" />
+              <button class="btn btn-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  class="search-svg"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <h4 class="popular-title">Popular News</h4>
+            <ul class="ps-3">
+              <li>Popular News Headline</li>
+              <li>Popular News Headline</li>
+              <li>Popular News Headline</li>
+            </ul>
+          </section>
+
+          <section class="bg-info-subtle p-3 rounded mb-4">
+            <h4 class="popular-title">Popular News</h4>
+            <ul class="ps-3">
+              <li>Popular News Headline</li>
+              <li>Popular News Headline</li>
+              <li>Popular News Headline</li>
+            </ul>
+          </section>
+
+          <section>
+            <img
+              src="./img/flag.jpg"
+              alt="flag"
+              class="img-fluid rounded mb-3"
+            />
+            <div class="border-bottom pb-3 mb-3">
+              <h3 class="main-new-title">Politics</h3>
+              <p class="main-story-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci sit numquam veritatis recusandae dicta eos quaerat,
+                dolorem cum, cumque, eaque facere sapiente enim. Aperiam nostrum
+                facere earum iusto quae alias?
+              </p>
+            </div>
+            <button class="btn btn-custom w-100">Address auvs</button>
+          </section>
+        </aside>
+      </div>
+    </div>
+
+    <footer class="bg-info-subtle text-center py-4">
+      <p class="mb-0">&copy; 2024 News Website</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
